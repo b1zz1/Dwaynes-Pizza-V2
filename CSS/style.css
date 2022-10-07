@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Share&family=Sora:wght@300;400;700&display=swap');
+
+body, html {
+    height: 100%;
+    
+}
+
+.full-page{
+    display: flex;
+    justify-content: center;
+}
+
+/*estilo do header*/
+header{
+    display: flex;
+    width: 1550px;
+    z-index: 1;
+}
+
+#logo-n-text{
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo-image{
+    padding-top: 17px;
+    padding-right: 20px;
+}
+
+.banner-options{
+    color: white;
+    font-family: 'Share', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-options span{
+    padding: 10px;
+}
+
+.banner-options a{
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+.banner-options a:hover{
+    color: #D9D9D9;
+    transition: 0.2s;
+}
+
+.banner-options button{
+    background: #FF6D1C;
+    color: #5C2A1A;
+    font-family: inherit;
+    font-size: 32px;
+    border: none;
+    width: 133px;
+    height: 48px;
+    border-radius: 10px;
+}
+
+.banner-options button:hover{
+    background: #d35816;
+    color: #472114;
+    cursor: pointer;
+    transition: 0.2s;
+}
+/*estilo da página inicial*/
+.landing-page{
+    background-image: url("../contents/WoodBG.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1600px;
+    height: 961px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#mantra{
+    font-family: 'Sora', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    width: 800px;
+    text-align: right;
+    margin-top: 255px;
+}
+
+#mantra-alt{
+    color: #FF6D1C;
+    border: white solid;
+    background: white;
+    border-radius: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#pizza-background{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: -320px;
+}
+
+#pizza-background img{
+    width: 160%;
+    height: auto;
+}
+
+#therock-posing{
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 800px;
+}
+
+#therock-posing img{
+    width: 135%;
+    height: auto;
+}
+
+/*estilo da página de pedidos*/
+.order-page{
+    /*
+    background-image: url("../contents/pizza-makingBG.jpg");
+    background-repeat: no-repeat;
+    width: 1600px;
+    height: 961px;
+    display: flex;
+    justify-content: center;
+    */
+}
