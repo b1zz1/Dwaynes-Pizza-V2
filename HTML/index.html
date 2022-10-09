@@ -36,7 +36,95 @@
             </span>
         </div>
         <div class="order-page">
-            
+            <h1 id="title-change">PEDIDO</h1>
+            <div id="order-panel">
+                <div class="panel-margin">
+                    <div class="panel-hider">
+                        <h3>Tamanho:</h3>
+                        <form id="psize-input">
+                            <label for="psize-s">Pequena(30cm)</label>
+                            <input type="radio" id="psize-s" name="psize">
+                            <label for="psize-m">| Média(35cm)</label>
+                            <input type="radio" id="psize-m" name="psize">
+                            <label for="psize-l">| Grande(42cm)</label>
+                            <input type="radio" id="psize-l" name="psize">
+                        </form>
+                        <span id="prices">
+                            <h4 id="price-s">29,90R$</h4> 
+                            <h4 id="price-m">34,90R$</h4>
+                            <h4 id="price-l">52,90R$</h4>
+                        </span>
+                        <h3>Sabores:</h3>
+                        <div id="flavor-selection">
+                            <span class="flavor-option">
+                                <span>
+                                    <img src="../contents/Menu-Icon.png" class="pizza-icon-mini" alt="pizza-icon">
+                                </span>
+                                <label class="pizza-checkbox"><span class="pizza-name">Muçarock</span>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <br><span class="p-info">Molho de tomate, queijo mussarela, rodelas de tomate e orégano</span>
+                                <hr class="orange-bar"></hr>
+                            </span>
+                            <span class="flavor-option">
+                                <span>
+                                    <img src="../contents/Menu-Icon.png" class="pizza-icon-mini" alt="pizza-icon">
+                                </span>
+                                <label class="pizza-checkbox"><span class="pizza-name">Baycon Johnson</span>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <br><span class="p-info">Molho de tomate, queijo mussarela, bacon em cubos e orégano</span>
+                                <hr class="orange-bar"></hr>
+                            </span>
+                            <span class="flavor-option">
+                                <span>
+                                    <img src="../contents/Menu-Icon.png" class="pizza-icon-mini" alt="pizza-icon">
+                                </span>
+                                <label class="pizza-checkbox"><span class="pizza-name">Dwaynegnon</span>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <br><span class="p-info">Molho de tomate, queijo mussarela, champignon, orégano e azeite</span>
+                                <hr class="orange-bar"></hr>
+                            </span>
+                            <span class="flavor-option">
+                                <span>
+                                    <img src="../contents/Menu-Icon.png" class="pizza-icon-mini" alt="pizza-icon">
+                                </span>
+                                <label class="pizza-checkbox"><span class="pizza-name">THE PIZZA</span>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <br><span class="p-info">Frango, ovo, batata doce, creatina e whey protein</span>
+                                <hr class="orange-bar"></hr>
+                            </span>  
+                        </div>
+                            <h3 id="extras-title">Adicionais:</h3>
+                            <div id="extras-margin">
+                            <span class="extras">
+                                <label class="extra-option"><span class="extra-name">Rock-Cola 620ml</span> + 3,50R$</label>
+                                <input type="checkbox">
+                                <label class="extra-option"><span class="extra-name">Guarawayne 620ml</span> + 3,50R$</label>
+                                <input type="checkbox">
+                            </span>
+                        </div>
+                        <span class="area-button">
+                            <button onclick="panelChange()">PROSSEGUIR</button>
+                        </span>
+                    </div>
+                    <div class="address-panel">
+                        <h3>Endereço para entrega:</h3>
+                        <span class="address-form">
+                            <label class="CEP">CEP</label>
+                            <input type="number">
+                            <label class="rua">Rua</label>
+                            <input type="text">
+                            <label class="bairro">Bairro</label>
+                            <input type="text">
+                            <label class="casa-apto">Casa/Apto</label>
+                            <input type="number">
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer></footer>
     </div>

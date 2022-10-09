@@ -2,7 +2,7 @@
 
 body, html {
     height: 100%;
-    
+    background-color: #5C2A1A;
 }
 
 .full-page{
@@ -14,7 +14,7 @@ body, html {
 header{
     display: flex;
     width: 1550px;
-    z-index: 1;
+    z-index: 2;
 }
 
 #logo-n-text{
@@ -128,12 +128,193 @@ header{
 
 /*estilo da página de pedidos*/
 .order-page{
-    /*
-    background-image: url("../contents/pizza-makingBG.jpg");
+    font-family: 'Sora', sans-serif;
+    font-weight: 300;
+    background-image: url("../contents/pizza-makingBGred.jpg");
     background-repeat: no-repeat;
+    position: absolute;
     width: 1600px;
     height: 961px;
+    top: 961px;
     display: flex;
     justify-content: center;
-    */
+    z-index: 1;
 }
+
+.order-page h1{
+    color: white;
+    font-weight: 300;
+    font-size: 75px;
+    letter-spacing: 0.04em;
+    margin-top: 25px;
+
+}
+
+#order-panel{
+    background: white;  
+    position: absolute;
+    width: 1049px;
+    height: 755px;
+    margin-top: 135px;
+    border-radius: 10px;
+}
+
+.panel-margin{
+    margin: 45px 68px;
+}
+
+#order-panel h3{
+    color: black;
+    font-size: 24px;
+    font-style: normal;
+    display: flex;
+}
+
+#order-panel h4{
+    color: black;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;  
+}
+
+#prices{
+    align-items:flex-start;
+}
+
+#price-s{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0;
+    position: absolute;
+}
+
+#price-m{
+    display: flex;
+    justify-content:center;
+    margin: 0 0;
+    position: inherit;
+}
+
+#price-l{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0;
+}
+
+#psize-input{
+    color: #FF6D1C;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+#flavor-selection{
+    color: black;
+    font-weight: 300;
+    font-size: 16px;
+    max-width: 913px;
+    justify-content: space-around;
+    display:grid;
+    
+    grid-template-columns: 390px 390px;
+    grid-row: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 35px;
+    
+}
+
+.pizza-name{
+    font-size: 32px;
+    color: inherit;
+    margin: 0;
+}
+
+.p-info{
+    vertical-align: bottom;
+}
+
+.flavor-option{
+    display: flex;
+    max-width: 400px;
+    text-align: left;
+}
+
+.pizza-icon-mini{
+    height: 50%;
+    width: auto;
+    margin-right: 15px;
+}
+
+.pizza-checkbox{
+    float: left;
+}
+
+.orange-bar{
+    background-color: #FF6D1C;
+    border: none;
+    height: 2px;
+    width: auto;
+}
+
+#extras-title{
+    color: inherit;
+    margin-top: -30px;
+}
+#extras-margin{
+    display: flex;
+    max-width: 480px;
+}
+
+.extras label{
+    color: black;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.extra-name{
+    color: #FF6D1C;
+}
+
+.area-button button{
+    background-color: #FF6D1C;
+    border: none;
+    border-radius: 10px;
+    color: #5C2A1A;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 311px;
+    height: 108px;
+    margin-top: -109px;
+}
+
+.area-button button:hover{
+    background-color: #d35816;
+    color: #472114;
+    transition: 0.2s;
+}
+
+/*painel endereço*/
+.address-panel{
+   display:none;
+
+}
+
+.address-form{
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.address-form input{
+    width: 419px;
+    height: 36px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 6px;
+    
+}
+/*rodapé*/
