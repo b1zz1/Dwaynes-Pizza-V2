@@ -100,9 +100,9 @@
                             <h3 id="extras-title">Adicionais:</h3>
                             <div id="extras-margin">
                             <span class="extras">
-                                <label class="extra-option"><span class="extra-name">Rock-Cola 620ml</span> + 3,50R$</label>
+                                <label class="extra-option"><span class="extra-name" name="extra">Rock-Cola 620ml</span> + 3,50R$</label>
                                 <input type="checkbox">
-                                <label class="extra-option"><span class="extra-name">Guarawayne 620ml</span> + 3,50R$</label>
+                                <label class="extra-option"><span class="extra-name" name="extra">Guarawayne 620ml</span> + 3,50R$</label>
                                 <input type="checkbox">
                             </span>
                         </div>
@@ -113,7 +113,7 @@
                     <div class="address-panel">
                         <h3>Endereço para entrega:</h3>
                         <span class="address-form">
-                            <span class="form-style">
+                            <form class="form-style">
                                 <label class="CEP">CEP</label>
                                 <input type="number">
                                 <label class="rua">Rua</label>
@@ -122,7 +122,7 @@
                                 <input type="text">
                                 <label class="casa-apto">Casa/Apto</label>
                                 <input type="number">
-                            </span>
+                            </form>
                             <span id="address-radio">
                                 <label>Casa</label>
                                 <input type="radio" name="address-radio">
@@ -145,7 +145,7 @@
                             </span> 
                         </span>
                         <span id="confirm-button">
-                            <button type="submit" onclick="displayPizzaSize()" class="open-modal" data-open="order-modal">PROSSEGUIR</button>
+                            <button type="submit" onclick="setModalValues()" class="open-modal" data-open="order-modal">PROSSEGUIR</button>
                         </span>
                     </div>
                     <div class="modal" id="order-modal">
@@ -156,9 +156,9 @@
                             <section class="modal-content">
                                 <h1>PEDIDO</h1>
                                 <span class="text-breaking">
-                                    <span class="label">Tamanho: </span><span class="userInput" id="psize-input">input</span>
+                                    <span class="label">Tamanho: </span><span class="userInput" id="psize-value">input</span>
                                     <span class="label">Sabores: </span><span class="userInput" id="pflavor-input">input</span>
-                                    <span class="label">Adicionais:</span><span class="userInput">input</span>
+                                    <span class="label">Adicionais:</span><span class="userInput" id="order-extra-input">input</span>
                                 </span>
                                 <h1>ENDEREÇO</h1>
                                 <span class="text-breaking">
@@ -176,6 +176,6 @@
         </div>
         <footer></footer>
     </div>
-    <script src="JS/script.js"></script>
+    <script src="./JS/script.js"></script>
 </body>
 </html>
