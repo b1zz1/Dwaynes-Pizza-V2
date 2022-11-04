@@ -10,6 +10,7 @@ function getValues(){
   const psizeGetter = document.getElementsByName("psize")
   const extrasGetter= document.getElementsByName("extra")
   let size, extra;
+  
   psizeGetter.forEach(element => {
     if(element.checked) size = element.value
   });
