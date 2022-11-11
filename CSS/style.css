@@ -472,3 +472,31 @@ header{
         color: #5C2A1A;
     }
 /*rodapé*/
+
+/*página de cadastro*/
+.body-bg{
+    background-image: url("../contents/cadastro-BG.jpg");
+    background-size: 100%;
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    color: white;
+    font-size: 32px;
+}
+
+.div-form{
+max-width: 450px;
+margin-left: 60px;
+}
+
+.user-reg{
+    display: grid;
+}
+
+#reg-button{
+    background: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 130px;
+    height: 40px;
+    margin-left: 380px
+}
